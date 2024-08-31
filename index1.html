@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="icons8-music-120.png" type="image/x-icon">
+</head>
+<body class="head w-screen h-screen bg-black text-white font-poppins box-border">
+    <section class="main h-screen">
+        <div class="sm:flex h-[88%] sm:h-[91%]">
+            <div class="menu_side transform translate-x-[-100%] sm:transform-none absolute z-10 bg-[#18122B] h-[86%] sm:static sm:h-[100%] sm:w-[25%] duration-1000">
+                <h6 class="sm:hidden absolute right-[-46px] bottom-[306px] w-10 h-10 bg-black rounded-full flex justify-center items-center text-base cursor-pointer transition ease-linear" id="menu_list_active_btn"><i class="bi bi-music-note-list"></i></h6>
+                <div class="playlist">
+                    <h1 class="text-base font-medium sm:text-xl pl-5 pt-4">Playlist</h1>
+                    <div class="gaane pl-5 pt-2 sm:pt-10">
+                        <h4 class="text-xs pb-1 sm:text-base sm:pb-2 font-normal cursor-pointer text-blue-500"><i class="bi bi-music-note-beamed"></i>  Playlist</h4>
+                        <h4 class="text-xs pb-1 sm:text-base sm:pb-2 font-normal cursor-pointer delay-100 text-gray-600 hover:text-white"><i class="bi bi-music-note-beamed"></i>  Last Listening</h4>
+                        <h4 class="text-xs pb-1 sm:text-base sm:pb-2 font-normal cursor-pointer delay-100 text-gray-600 hover:text-white"><i class="bi bi-music-note-beamed"></i>  Recomended</h4>
+                    </div>
+                    <div class="menu_song w-[100%] h-[420px] sm:h-[392px] xl:h-[425px] mt-3 sm:mt-0 xl:mt-10 text-xs sm:text-sm overflow-auto no-scrollbar scroll-smooth">
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">01</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="1"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">02</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="2"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">03</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="3"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">04</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="4"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">05</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="5"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">06</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="6"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">07</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="7"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">08</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="8"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">09</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="9"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">10</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="10"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">11</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="11"></i>
+                        </li>
+                        <li class="songItem list-none relative pl-5 pt-1 pb-1 sm:pt-2 flex items-center mb-[2px] sm:mb-2 cursor-pointer hover:bg-[rgba(105,105,105,0.1)]">
+                            <span class="text-xs font-semibold text-gray-500">12</span>
+                            <img class="h-8 w-8 sm:h-11 sm:w-11 ml-3 xl:ml-6" src="song photos/on my way img.jpg" alt="">
+                            <h5 class="text-xs ml-1 xl:ml-3 w-44 sm:w-[76px] lg:w-[135px] xl:w-52 overflow-hidden text-ellipsis whitespace-nowrap">On My Way <br>
+                                <div class="subtitle text-xs text-gray-500">Alan Walker</div>
+                            </h5>
+                            <i class="play_song bi-play-circle-fill absolute right-2 text-xl" id="12"></i>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="song_side bg-indigo-950 sm:bg-[#0F0F0F] h-[100%] sm:h-[100%] sm:w-[75%]">
+                <img class="absolute h-[225px] sm:h-[220px] lg:h-[250px] xl:h-[300px] ml-8 sm:ml-40 lg:ml-60 xl:ml-96 z-0" src="dua.png" alt="">
+                <nav class="relative w-[90%] h-[10%] m-auto flex space-x-5 sm:space-x-8  z-0">
+                    <ul class="mt-2 sm:mt-4 xl:mt-6 text-[9px] sm:text-sm font-bold text-slate-600 cursor-pointer hover:text-white delay-100 relative">DISCOVER <span class="absolute h-[2.5px] w-[100%] bg-blue-500 bottom-[32px] sm:bottom-4 left-0 rounded-2xl"></span></ul>
+                    <ul class="mt-2 sm:mt-4 xl:mt-6 text-[9px] sm:text-sm font-bold text-slate-600 cursor-pointer hover:text-white delay-100">MY LIBRARY</ul>
+                    <div class="absolute search right-14 sm:right-16 lg:right-20 xl:right-32 mt-2 sm:mt-4 xl:mt-6 text-[9px] sm:text-sm w-[32%] border-2 border-gray-700 rounded-xl pt-[1px]">
+                        <i class="bi bi-search pl-2 pr-1"></i>
+                        <input class="bg-[#0d1123] pt-[1px] pb-[2px] sm:pt-[2px] sm:pb-1 w-[65%] sm:w-[72%] lg:w-[75%] xl:w-[78%] outline-none" type="text" placeholder="Search Music...">
+                    </div>
+                    <img class="absolute rounded-3xl right-2 h-5 sm:h-8 xl:h-10 xl:right-8 mt-[6px] sm:mt-[14px] xl:mt-[18px]" src="user.png" alt="">
+                </nav>
+                <div class="content relative w-[90%] h-[30%] m-auto pt-12 sm:pt-10 z-0">
+                    <h1 class="text-base sm:text-2xl lg:text-3xl font-bold">Houdini</h1>
+                    <p class="w-[95%] text-xs sm:text-sm sm:w-[80%] xl:w-[35%]">I come and I go, tell me all the ways you need me. I'm not here for long, catch me or I go Houdini.</p>
+                    <div class="flex mt-1 sm:mt-2 lg:mt-3 xl:mt-4">
+                        <button class="bg-transparent text-xs md:text-base text-center w-[18%] md:w-[13%] border-2 border-blue-600 rounded-2xl font-bold hover:text-blue-600 mr-2 md:mr-4" id="main_play">Play</button>
+                    </div>
+                </div>
+                <div class="all_songs mt-5 sm:mt-8 h-[53%] sm:h-[56%] overflow-auto no-scrollbar">
+                    <div class="popular_song w-[90%] h-auto m-auto">
+                        <div class="h4 flex justify-items-center justify-between">
+                            <h4 class="font-bold text-xs sm:text-sm lg:text-lg">Popular Songs</h4>
+                            <div class="btn_s">
+                                <i class="bi bi-arrow-left text-xs sm:text-sm text-slate-600 cursor-pointer hover:text-white" id="pop_song_left"></i>
+                                <i class="bi bi-arrow-right text-xs sm:text-sm text-slate-600 cursor-pointer hover:text-white"  id="pop_song_right"></i>
+                            </div>
+                        </div>
+                        <div class="pop_song w-[100%] h-20 sm:h-36 lg:h-40 mt-1 sm:mt-2 lg:mt-3 flex overflow-auto no-scrollbar scroll-smooth">
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="13"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="14"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="15"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="16"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="17"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="18"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="19"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="20"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="21"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="22"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="23"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="24"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="hollywood_hit_song w-[90%] h-auto m-auto mt-2">
+                        <div class="h4 flex justify-items-center justify-between">
+                            <h4 class="font-bold text-xs sm:text-sm lg:text-lg">Hollywood Hits</h4>
+                            <div class="btn_s">
+                                <i class="bi bi-arrow-left text-xs sm:text-sm text-slate-600 cursor-pointer hover:text-white" id="holly_song_left"></i>
+                                <i class="bi bi-arrow-right text-xs sm:text-sm text-slate-600 cursor-pointer hover:text-white" id="holly_song_right"></i>
+                            </div>
+                        </div>
+                        <div class="holly_hit_song w-[100%] h-20 sm:h-36 lg:h-40 mt-1 sm:mt-2 lg:mt-3 flex overflow-auto no-scrollbar scroll-smooth">
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="25"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="26"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="27"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="28"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="29"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="30"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="31"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="32"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="33"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="34"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="punjabi_hit_song w-[90%] h-auto m-auto mt-2">
+                        <div class="h4 flex justify-items-center justify-between">
+                            <h4 class="font-bold text-xs sm:text-sm lg:text-lg">Punjabi Hits</h4>
+                            <div class="btn_s">
+                                <i class="bi bi-arrow-left text-xs sm:text-sm text-slate-600 cursor-pointer hover:text-white" id="punjabi_song_left"></i>
+                                <i class="bi bi-arrow-right text-xs sm:text-sm text-slate-600 cursor-pointer hover:text-white" id="punjabi_song_right"></i>
+                            </div>
+                        </div>
+                        <div class="punja_hit_song w-[100%] h-20 sm:h-36 lg:h-40 mt-1 sm:mt-2 lg:mt-3 flex overflow-auto no-scrollbar scroll-smooth">
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="35"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="36"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="37"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="38"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="39"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="40"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="41"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="42"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="43"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="44"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="45"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="46"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="47"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="48"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="49"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                    <i class="1 bi bi-play-circle-fill absolute text-xl cursor-pointer opacity-0 hover:opacity-100"></i>
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-base sm:text-xl bottom-11 sm:bottom-20" id="50"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                            <li class="songItem relative list-none w-[60px] sm:w-[120px] lg:w-[140px] mr-2 hover:bg-[rgba(105,105,105,0.1)]">
+                                <div class="play w-[100%] h-[100%] absolute cursor-pointer opacity-0 hover:opacity-100 flex justify-center items-center bottom-0">
+                                    <i class="play_song bi-play-circle-fill absolute text-xl bottom-20" id="51"></i>
+                                </div>
+                                <div class="img_play w-[60px] h-[45px] sm:w-[120px] sm:h-[100px] lg:w-[140px] lg:h-[120px] flex justify-center items-center">
+                                    <img class="h-[100%] w-[100%]" src="" alt="">
+                                </div>
+                                <h5 class="text-xs w-[100%] overflow-hidden text-ellipsis whitespace-nowrap pt-[5px] text-center leading-4"><br>
+                                    <div class="subtitle text-xs text-gray-500"></div>
+                                </h5>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="master_play bg-[#18122B] w-screen h-[12%] sm:h-[9%] pl-5">
+            <div class="max-w-[300px]  flex flex-wrap pt-[1px] sm:pt-3 items-center sm:max-w-[970px] xl:max-w-[1450px]">
+                <div class="w-7 h-7 pb-1 flex items-end mt-[6px] sm:mt-0">
+                    <div class="wave1 w-[3px] h-2 mr-[3px] bg-blue-400 animate-rubber-band"></div>
+                    <div class="wave2 w-[3px] h-3 mr-[3px] bg-blue-400 animate-rubber-band"></div>
+                    <div class="wave3 w-[3px] h-1 mr-[3px] bg-blue-400 animate-rubber-band"></div>
+                </div>
+                <img class="h-11 w-11 sm:m-0" src="Screenshot 2024-01-28 171659.png" id="poster_master_play" alt="">
+                <h5 class="title text-sm h-10 w-24 sm:w-32 xl:w-64 ml-1 over overflow-hidden text-ellipsis whitespace-nowrap font-bold">Can you hit us with that vibe?<br>
+                    <div class="subtitle text-xs overflow-hidden text-ellipsis text-gray-500">Drop the beat!!</div>
+                </h5>
+                <div class="icon text-base lg:text-xl ml-1 sm:ml-4 md:ml-8 xl:ml-9 sm:mr-5 outline-none pt-2 lg:pt-0 h-8">
+                    <i class="bi bi-music-note-beamed cursor-pointer mr-1"></i>
+                    <i class="bi bi-skip-start-fill cursor-pointer" id="back"></i>
+                    <i class="bi bi-play-fill cursor-pointer border-2 border-[rgba(105,105,105,0.1)] rounded-full pt-[1px] pb-[2px] pr-1 pl-[5px]" id="master_play"></i>
+                    <i class="bi bi-skip-end-fill cursor-pointer" id="next"></i>
+                    <i class="bi bi-cloud-arrow-down-fill cursor-pointer ml-1"></i>
+                </div>
+                <span class="time w-8 text-xs font-normal mt-[14px] lg:mt-0" id="currentStart">0:00</span>
+                <div class="bar mt-3 lg:m-0 relative h-[4px] w-[220px] sm:w-[290px] lg:w-[490px] xl:w-[800px] bg-black">
+                    <input class="absolute w-[220px] sm:w-[290px] lg:w-[490px] xl:w-[800px] top-[-7px] cursor-pointer opacity-0" type="range" id="seek" min="0" max="100">
+                    <div class="bar2 absolute bg-blue-400 w-[0%] cursor-pointer h-[2px] top-0 transition ease-linear" id="bar2"></div>
+                    <div class="dot absolute w-[10px] h-[10px] bg-blue-300 rounded-xl cursor-pointer top-[-3.5px] transition ease-linear"></div>
+                </div>
+                <span class="ml-[10px] w-8 text-xs font-normal mt-[12px] lg:mt-0" id="currentEnd">0:00</span>
+            </div>
+        </div>
+    </section>
+    <script src="music.js"></script>
+</body>
+</html>

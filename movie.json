@@ -1,0 +1,161 @@
+[{
+    "name": "Game of Thrones",
+    "about": "Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. Meanwhile, a force is rising after millenniums and threatens the existence of living men.",
+    "imdb": 9.2,
+    "date": "2011",
+    "sposter": "img/gameofthrones.png",
+    "bposter": "img/gameofthrones1.png",
+    "genre": "Drama",
+    "type": "series",
+    "url": "https://www.filmyzilla.com.sb/category/273/Game-of-thrones-all-parts/default/1.html"
+}, {
+    "name": "The Boys",
+    "about": "When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.",
+    "imdb": 9.3,
+    "date": "2022",
+    "sposter": "img/the boys.jpg",
+    "bposter": "img/the boys1.jpg",
+    "genre": "Action",
+    "type": "series",
+    "url": "https://www.filmyzilla.com.sb/movie/9672/The-boys-(2022)-season-3-web-series.html"
+}, {
+    "name": "Money Heist",
+    "about": "",
+    "imdb": 9.9,
+    "date": "2020",
+    "sposter": "img/money heist.jpg",
+    "bposter": "img/money heist1.jpg",
+    "genre": "Action",
+    "type": "series",
+    "url": "https://www.filmyzilla.com.sb/category/407/Money-heist-all-season-hindi-dubbed/default/1.html"
+}, {
+    "name": "John Wick",
+    "about": "",
+    "imdb": 9.8,
+    "date": "2022",
+    "sposter": "img/Jhon Wick.jpg",
+    "bposter": "img/jhon wick1.webp",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/13636/John-wick-chapter-4-(2023)-hindi-dubbed.html"
+}, {
+    "name": "Ant Man",
+    "about": "",
+    "imdb": 8.9,
+    "date": "2023",
+    "sposter": "img/ant man.jpg",
+    "bposter": "img/ant man1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/12762/Ant-man-and-the-wasp-quantumania-(2023)-hindi-dubbed.html"
+}, {
+    "name": "Avengers",
+    "about": "",
+    "imdb": 9.9,
+    "date": "2012",
+    "sposter": "img/avengers.jpg",
+    "bposter": "img/avengers1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/1683/The-avengers-(2012)-hindi-dubbed-movie.html"
+}, {
+    "name": "Moon Knight",
+    "about": "",
+    "imdb": 7.3,
+    "date": "2022",
+    "sposter": "img/moon knight.jpg",
+    "bposter": "img/moon knight1.webp",
+    "genre": "Action",
+    "type": "series",
+    "url": "https://www.filmyzilla.com.sb/movie/8893/Moon-knight-(2022)-web-series.html"
+}, {
+    "name": "Kota Factory",
+    "about": "",
+    "imdb": 9.6,
+    "date": "2020",
+    "sposter": "img/kota factory.jpg",
+    "bposter": "img/kota factory1.webp",
+    "genre": "Drama",
+    "type": "series",
+    "url": "https://www.filmyzilla.com.sb/movie/1735/Kota-factory-(2019)-web-series.html"
+}, {
+    "name": "Collage Romance",
+    "about": "",
+    "imdb": 7.9,
+    "date": "2019",
+    "sposter": "img/collage romance.jpg",
+    "bposter": "img/collage romance1.jpg",
+    "genre": "Drama",
+    "type": "series",
+    "url": "https://www.filmyzilla.com.sb/movie/15154/College-romance-(2018)-web-series.html"
+}, {
+    "name": "Thor Love Of Thunder",
+    "about": "",
+    "imdb": 8.8,
+    "date": "2022",
+    "sposter": "img/thor love of thunder.jpg",
+    "bposter": "img/thor love of thunder1.avif",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/10017/Thor-love-and-thunder-(2022)-hindi-dubbed.html"
+}, {
+    "name": "Uncharted",
+    "about": "",
+    "imdb": 9.8,
+    "date": "2022",
+    "sposter": "img/uncharted.webp",
+    "bposter": "img/uncharted1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/server/14289/Uncharted-2022-hindi-dubbed-full-movie-original-bluray.mp4.html"
+}, {
+    "name": "Eesho",
+    "about": "",
+    "imdb": 8.2,
+    "date": "2022",
+    "sposter": "img/eesho.jpeg",
+    "bposter": "img/eesho1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/server/17094/Eesho-2022-hindi-dubbed-full-movie-hdrip.mp4.html"
+}, {
+    "name": "Top Gun",
+    "about": "",
+    "imdb": 8.0,
+    "date": "2022",
+    "sposter": "img/topgun.jpg",
+    "bposter": "img/topgun1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/10649/Top-gun-maverick-(2022)-hindi-dubbed.html"
+}, {
+    "name": "Jurassic World",
+    "about": "",
+    "imdb": 8.0,
+    "date": "2022",
+    "sposter": "img/jurassic world.jpg",
+    "bposter": "img/jurassic world1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/10030/Jurassic-world-dominion-(2022)-hindi-dubbed.html"
+}, {
+    "name": "Eternals",
+    "about": "",
+    "imdb": 9.0,
+    "date": "2022",
+    "sposter": "img/eternals.jpg",
+    "bposter": "img/eternals1.webp",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/server/12990/Eternals-2021-unofficial-hindi-dubbed-full-movie-webrip.mp4.html"
+}, {
+    "name": "Spider Man",
+    "about": "",
+    "imdb": 9.9,
+    "date": "2020",
+    "sposter": "img/spiderman.jpg",
+    "bposter": "img/spiderman1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "https://www.filmyzilla.com.sb/movie/7292/Spider-man-no-way-home-(2021)-hindi-dubbed.html"
+}]
